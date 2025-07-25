@@ -2,6 +2,8 @@
 
 A simple task tracker used to demonstrate deployment in production environment.
 
+You can check the functionality on https://polarstern13.de/
+
 Github Actions is setup for automatic deployment on the server. It also sends a message with the result of the deployment to the Telegram-bot, specified in GitHub Secrets.
 
 ## Technology stack
