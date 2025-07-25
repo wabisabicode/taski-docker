@@ -2,11 +2,14 @@
 
 A simple task tracker used to demonstrate deployment in production environment.
 
+Github Actions is setup for automatic deployment on the server. It also sends a message with the result of the deployment to the Telegram-bot, specified in GitHub Secrets.
+
 ## Technology stack
 [![Django](https://img.shields.io/badge/-Django-092E20?style=flat&logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Docker Compose](https://img.shields.io/badge/-Docker--compose-2496ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+[![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
 ## Local machine deployment
 You can run the tracker on your local machine:
