@@ -4,11 +4,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-secret-key')
 
-DEBUG = True
+DEBUG = os.getenv('DEBUG_MODE', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = ['51.250.31.82', 'polarstern13.de']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS_BACKEND', '127.0.0.1').split(', ')
 
 
 # Application definition
